@@ -9,13 +9,11 @@ html{box-sizing: border-box;
   grid-gap: 2px;
   height:100vh;
 }
-@media only screen and (min-width: 200px) {
+@media only screen and (min-width: 300px) {
   .grid-item-s1{
           background-color:yellow;
   }
-  @media only screen and (min-width: 200px) {
-    .grid-item-s8{
-            background-color:white;
+
     }
 .grid-item-s1 {
   grid-area: 1/2/4/1;
@@ -30,7 +28,10 @@ html{box-sizing: border-box;
     border-color: black;
     border-color: solid;
   }
-
+  @media only screen and (min-width: 250px) {
+    .grid-item-s5{
+            background-color:red;
+    }
   .grid-item-s3 {
     grid-area: 1/2/2/2;
     background-color: white;
@@ -104,11 +105,21 @@ html{box-sizing: border-box;
     .grid-item-s1{
             background-color:blue;
     }
-    @media only screen and (max-width: 800px) {
+    @media only screen and (min-width: 100px) {
+      .grid-item-s1{
+              grid-area:2/3/4/1;
+      }
+    @media only screen and (max-width: 900px) {
       .grid-item-s8{
-              background-color:black;
+              background-color:yellow;
+              grid-area:  2/2/2/2;
+      }
+              @media only screen and (max-width: 900px) {
+                .grid-item-s9{
+                        background-color:black;
       }
      }
     }
   }
 }
+  }
